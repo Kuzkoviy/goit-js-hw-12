@@ -136,8 +136,6 @@ const onLoadMorePress = async event => {
     totalPages = Math.ceil(totalHits / PER_PAGE);
     if (photosCurrentPage < totalPages) {
       loadMoreBtnEl.classList.remove('is-hidden');
-    } else {
-      loadMoreBtnEl.removeEventListener('click', onLoadMorePress);
     }
     console.log(totalPhotos);
     // Show message if totalHits is 15 or less
